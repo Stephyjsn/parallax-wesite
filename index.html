@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARALLAX WEBSITE</title>
+    <link rel="stylesheet" href="./style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Archivo+Black&family=Dancing+Script:wght@400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yuji+Mai&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <img  src="./images/mountain.jpg" alt="" id="first">
+        <img  src="./images/illikkal_kallu-removebg-preview.png" alt="" id="last">
+        <h1 id="text">kerala</h1>
+    </section>
+
+    <div class="ab-text">
+        <div class="heading">
+            <h2>Famous Destinations in Kerala</h2>
+            <p>Here are the four most iconic destinations and there are many more </p>
+        </div>
+
+    <div class="container">
+        <div class="box box1">
+            <div class="in">
+                <p>kochi</p>
+            </div>
+        </div>
+        <div class="box box2">
+            <div class="in">
+                <p>Alappy</p>
+            </div>
+        </div>
+        <div class="box box3">
+            <div class="in">
+                <p>Bekal fort</p>
+            </div>
+        </div>
+        <div class="box box4">
+            <div class="in">
+                <p>kovalam</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <p>&#xa9 2024.Stephy Johnson</p>
+    </div>
+</div>
+
+
+    <script>
+        let first = document.getElementById("first");
+        let last = document.getElementById("last");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function(){
+            var value = window.scrollY;
+
+            first.style.top = value * 0.7 + 'px';
+            last.style.bottom = value * 0.5 + 'px';
+            text.style.top = value * 1 + 'px';
+        })
+        
+    </script>
+</body>
+</html>
